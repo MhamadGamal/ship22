@@ -1,0 +1,900 @@
+/*====================== main Styles ===================================*/
+@font-face {
+  font-family: main_Th_font;
+  src: url(../fonts/Roboto-Black.ttf); }
+
+@font-face {
+  font-family: main_Re_font;
+  src: url(../fonts/Roboto-Regular.ttf); }
+
+body {
+  font-family: main_Re_font;
+  font-size: 14px;
+  background-color: #ececec; }
+
+p, a, li {
+  font-family: main_Re_font;
+  font-size: 15px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: main_Th_font; }
+
+section {
+  padding: 50px 0; }
+
+.dark-bg {
+  background-color: #383538; }
+
+.grey {
+  background-color: #f2f2f2; }
+
+.section-head .divider {
+  width: 50px;
+  height: 3px;
+  background-color: #383538;
+  margin: 15px auto; }
+
+.section-head p {
+  font-size: 20px; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+a {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+a:hover {
+  color: #E3212B !important; }
+
+/*====================== Start Header Styles ===================================*/
+.header {
+  /*#Slider{
+        position: relative;
+        .Slider-indicators{
+            position: absolute;
+            right: 5%;
+            margin-top: 20%;
+            color: $main_text_light_color;
+            z-index: 6;
+            li{
+                a{
+                    display: inline-block;
+                    margin: 0;
+                    font-size: 35px;
+                    color: $main_text_light_color;
+                    &:hover{
+                        text-decoration: none;
+                        color: $main_text_light_color !important
+                    }
+                }
+            }
+        }
+        .slides {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            li{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                .slider-caption{
+                    position: absolute;
+                    margin-top: 20%;
+                    left: 5%;
+                    width: 60%;
+                    color: $main_text_light_color
+                }
+                img {
+                    height: 100vmin;
+                    -o-object-fit: cover;
+                        object-fit: cover;
+                    -o-object-position: top;
+                        object-position: top;
+                }
+                &:target {
+                    z-index: 3;
+                    -webkit-animation: slide 3s 1;
+                    animation: slide 3s 1;
+                }
+                &:not(:target) {
+                    -webkit-animation: hidden 3s 1;
+                    animation: hidden 3s 1;
+                }
+
+            }
+
+        }
+    }*/ }
+  .header .navbar {
+    margin-bottom: -60px;
+    background-color: #383538;
+    z-index: 99;
+    padding: 0;
+    height: 60px; }
+    .header .navbar .logo {
+      width: 54px;
+      background-color: #fff;
+      padding: 7px; }
+      .header .navbar .logo img {
+        max-width: 100%; }
+    .header .navbar .navbar-collapse li {
+      margin: 0 10px;
+      padding: 10px 0;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .header .navbar .navbar-collapse li a {
+        color: #eee;
+        font-size: 13px;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+        .header .navbar .navbar-collapse li a i {
+          margin-right: 5px; }
+    .header .navbar .navbar-collapse .active,
+    .header .navbar .navbar-collapse li:hover {
+      border-bottom: 4px solid #E3212B; }
+      .header .navbar .navbar-collapse .active a,
+      .header .navbar .navbar-collapse li:hover a {
+        color: #E3212B; }
+    .header .navbar .login-box ul {
+      list-style: none;
+      margin: 0; }
+      .header .navbar .login-box ul li {
+        padding: 19px 8px;
+        margin: 0 5px;
+        color: #fff;
+        font-size: 13px; }
+      .header .navbar .login-box ul .login {
+        padding: 20px 15px;
+        background-color: #E3212B; }
+        .header .navbar .login-box ul .login a {
+          font-size: 13px;
+          color: #eee; }
+          .header .navbar .login-box ul .login a:hover {
+            color: #383538 !important;
+            font-weight: bold; }
+      .header .navbar .login-box ul .lang img {
+        width: 12px;
+        margin-left: 3px;
+        margin-top: -2px; }
+    .header .navbar .navbar-toggler {
+      color: #E3212B;
+      padding: 0;
+      margin: 12px 15px 0 0;
+      font-size: 27px; }
+      .header .navbar .navbar-toggler:focus {
+        outline: none; }
+    .header .navbar .navbar-nav {
+      background-color: #383538; }
+  .header .carousel {
+    height: 100%; }
+    .header .carousel .carousel-indicators {
+      position: absolute;
+      right: 97px;
+      bottom: auto;
+      left: auto;
+      z-index: 15;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+      top: -40px; }
+      .header .carousel .carousel-indicators li {
+        width: 3px;
+        height: 40px;
+        margin: 0;
+        position: relative;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+        .header .carousel .carousel-indicators li span {
+          position: absolute;
+          display: inline-block;
+          left: -40px;
+          top: 0;
+          color: rgba(255, 255, 255, 0.5);
+          text-indent: 0;
+          font-size: 20px;
+          -webkit-transition: all .4s ease-in-out;
+          -moz-transition: all .4s ease-in-out;
+          -ms-transition: all .4s ease-in-out;
+          -o-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out; }
+      .header .carousel .carousel-indicators .active {
+        width: 5px;
+        right: 1px; }
+        .header .carousel .carousel-indicators .active span {
+          color: #fff !important;
+          background-color: transparent;
+          font-size: 30px;
+          left: -50px; }
+    .header .carousel .carousel-inner {
+      height: 100%;
+      position: relative; }
+      .header .carousel .carousel-inner .slider-caption {
+        position: absolute;
+        color: #fff;
+        width: 60%;
+        left: 97px;
+        margin-top: -40px;
+        height: 100%; }
+        .header .carousel .carousel-inner .slider-caption h3 {
+          margin-bottom: 30px; }
+      .header .carousel .carousel-inner img {
+        max-height: 100%; }
+      .header .carousel .carousel-inner .scrollable-icon {
+        position: absolute;
+        left: 45%;
+        width: 35px;
+        bottom: 15px;
+        cursor: pointer; }
+        .header .carousel .carousel-inner .scrollable-icon img {
+          width: 25px; }
+  .header .vertical .carousel-inner {
+    height: 100%; }
+  .header .carousel.vertical .carousel-item {
+    -webkit-transition: 0.6s ease-in-out top;
+    -moz-transition: 0.6s ease-in-out top;
+    -ms-transition: 0.6s ease-in-out top;
+    -o-transition: 0.6s ease-in-out top;
+    transition: 0.6s ease-in-out top; }
+  .header .carousel.vertical .active {
+    top: 0; }
+  .header .carousel.vertical .carousel-item {
+    left: 0; }
+
+/*====================== End Header Styles ===================================*/
+/*====================== Start Price Calculator Styles ===================================*/
+.Price-Calc {
+  padding-top: 70px; }
+  .Price-Calc .item {
+    margin: 20px;
+    padding: 5px 25px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
+    .Price-Calc .item .icon {
+      padding: 20px;
+      margin: 0 15px; }
+      .Price-Calc .item .icon i {
+        font-size: 40px; }
+    .Price-Calc .item p {
+      margin-top: 10px; }
+  .Price-Calc .active, .Price-Calc .item:hover {
+    background-color: #383538; }
+    .Price-Calc .active .icon, .Price-Calc .item:hover .icon {
+      border-bottom: 3px solid #E3212B; }
+      .Price-Calc .active .icon i, .Price-Calc .item:hover .icon i {
+        color: #eee; }
+    .Price-Calc .active p, .Price-Calc .item:hover p {
+      color: #eee; }
+  .Price-Calc .booking {
+    margin: 20px 0; }
+    .Price-Calc .booking .Parcels {
+      background-color: #E3212B;
+      color: #eee;
+      height: 100%;
+      text-align: center;
+      padding: 5px; }
+      .Price-Calc .booking .Parcels a:hover {
+        color: #e2e2e2 !important; }
+      .Price-Calc .booking .Parcels i {
+        cursor: pointer; }
+      .Price-Calc .booking .Parcels i:first-child {
+        margin-bottom: 10px; }
+      .Price-Calc .booking .Parcels h6 {
+        margin-top: 5px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        font-family: main_Re_font;
+        line-height: 1; }
+    .Price-Calc .booking .form-group {
+      padding: 15px 0;
+      margin: 0; }
+      .Price-Calc .booking .form-group .form-control {
+        width: 50%;
+        float: left;
+        font-size: 12px; }
+      .Price-Calc .booking .form-group .form-control::placeholder {
+        font-size: 10px; }
+      .Price-Calc .booking .form-group .input-addon {
+        background-color: #e2e2e2;
+        padding: 7px 4px;
+        height: calc(2.25rem + 2px);
+        display: inline-block;
+        line-height: 1.8; }
+    .Price-Calc .booking .book-btn {
+      width: 100%;
+      background-color: #383538;
+      color: #eee;
+      padding: 20px 8px; }
+      .Price-Calc .booking .book-btn i {
+        margin-left: 10px; }
+    .Price-Calc .booking .hint {
+      font-size: 12px;
+      color: #888;
+      padding-bottom: 10px;
+      display: inline-block; }
+      .Price-Calc .booking .hint i {
+        margin-right: 5px; }
+
+/*====================== End Price Calculator Styles ===================================*/
+/*====================== Start How It Works  Section Styles ===================================*/
+.how .tabs {
+  margin: 35px 0;
+  background-color: #E2E2E2;
+  padding: 0; }
+  .how .tabs .nav {
+    border: none; }
+    .how .tabs .nav li {
+      border: none;
+      margin: 0; }
+      .how .tabs .nav li a {
+        padding: 15px 20px;
+        font-size: 18px;
+        color: #8D8B8D;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+        .how .tabs .nav li a i {
+          font-size: 35px;
+          margin-right: 15px; }
+      .how .tabs .nav li .active {
+        background-color: #E3212B;
+        color: #eee;
+        border-color: rgba(255, 255, 255, 0.2);
+        height: 83px;
+        margin-top: -13px; }
+        .how .tabs .nav li .active:hover {
+          color: #eee !important; }
+
+.how .tab-content {
+  background-color: #E3212B;
+  color: #eee;
+  padding: 20px;
+  border: none; }
+
+.how .carousel-inner {
+  height: 500px; }
+  .how .carousel-inner .carousel-item {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+.how .carousel-control-prev i, .how .carousel-control-next i {
+  color: #383538;
+  font-size: 45px; }
+
+.how .carousel-indicators .active {
+  background-color: #4c4747; }
+
+.how .carousel-indicators li {
+  background-color: #c5c0c0; }
+
+/*====================== End  How It Works  Section Styles ===================================*/
+/*====================== Start Special Services  Section Styles ===================================*/
+.special {
+  padding: 0;
+  background-image: url(../img/coverservicetolibiya.png);
+  background-size: cover;
+  background-position: bottom;
+  border-bottom: 6px solid #E3212B; }
+  .special .overlay {
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(#383538 55%, rgba(0, 0, 0, 0.6));
+    background: -moz-linear-gradient(#383538 55%, rgba(0, 0, 0, 0.6));
+    background: -ms-linear-gradient(#383538 55%, rgba(0, 0, 0, 0.6));
+    background: -o-linear-gradient(#383538 55%, rgba(0, 0, 0, 0.6));
+    background: linear-gradient(#383538 55%, rgba(0, 0, 0, 0.6)); }
+    .special .overlay .section-title {
+      color: #fff; }
+    .special .overlay .divider {
+      background-color: #eee; }
+    .special .overlay .items {
+      color: #eee; }
+      .special .overlay .items .main {
+        font-size: 30px;
+        margin: 50px 0 30px 0; }
+        .special .overlay .items .main i {
+          margin-right: 10px; }
+      .special .overlay .items .sub-items {
+        margin: 40px 0 20px 0; }
+        .special .overlay .items .sub-items .divid {
+          font-size: 40px;
+          margin-top: 5px; }
+
+/*====================== End Special Services  Section Styles ===================================*/
+/*====================== Start Why use Shipthem  Section Styles ===================================*/
+.Why .timeline-container {
+  margin: 30px 0; }
+  .Why .timeline-container .timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative; }
+    .Why .timeline-container .timeline:before {
+      top: 30px;
+      bottom: 15%;
+      position: absolute;
+      content: " ";
+      width: 5px;
+      background-color: #383538;
+      left: 50%;
+      margin-left: -2.5px; }
+    .Why .timeline-container .timeline li {
+      margin-bottom: 60px;
+      position: relative;
+      overflow: hidden; }
+      .Why .timeline-container .timeline li:before, .Why .timeline-container .timeline li:after {
+        content: " ";
+        display: table; }
+      .Why .timeline-container .timeline li:after {
+        clear: both; }
+      .Why .timeline-container .timeline li .timeline-panel {
+        width: 50%;
+        float: left;
+        border: 1px solid #d4d4d4;
+        border-radius: 2px;
+        padding: 30px;
+        position: relative;
+        -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        background-color: #f2f2f2; }
+        .Why .timeline-container .timeline li .timeline-panel .num {
+          position: absolute;
+          left: 0;
+          bottom: -30%;
+          font-size: 100px;
+          font-weight: bold;
+          font-family: main_Th_font;
+          opacity: .1;
+          -webkit-transform: rotate(-30deg);
+          -moz-transform: rotate(-30deg);
+          -ms-transform: rotate(-30deg);
+          -o-transform: rotate(-30deg);
+          transform: rotate(-30deg); }
+        .Why .timeline-container .timeline li .timeline-panel:before {
+          position: absolute;
+          top: 35%;
+          right: -10px;
+          display: inline-block;
+          border-top: 10px solid transparent;
+          border-left: 10px solid #f2f2f2;
+          border-right: 0 solid #f2f2f2;
+          border-bottom: 10px solid transparent;
+          content: " "; }
+      .Why .timeline-container .timeline li .timeline-inverted + li:not(.timeline-inverted),
+      .Why .timeline-container .timeline li:not(.timeline-inverted) + li.timeline-inverted {
+        margin-top: -40px; }
+      .Why .timeline-container .timeline li:not(.timeline-inverted) {
+        padding-right: 90px; }
+      .Why .timeline-container .timeline li .timeline-badge {
+        color: #383538;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        margin-left: -35px;
+        background-color: #ececec;
+        z-index: 100;
+        border: 5px solid #383538;
+        border-radius: 50%; }
+        .Why .timeline-container .timeline li .timeline-badge i {
+          color: #383538;
+          width: 50px;
+          height: 50px;
+          background-color: #ececec;
+          border: 2px solid #383538;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 45px;
+          font-size: 25px;
+          margin: 5px; }
+    .Why .timeline-container .timeline .active .timeline-badge {
+      border-color: #E3212B; }
+      .Why .timeline-container .timeline .active .timeline-badge i {
+        border-color: #E3212B;
+        color: #E3212B; }
+    .Why .timeline-container .timeline .active .timeline-panel {
+      background-color: #E3212B;
+      color: #eee; }
+      .Why .timeline-container .timeline .active .timeline-panel:before {
+        border-right-color: #E3212B !important; }
+    .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
+      float: right;
+      width: 45%; }
+      .Why .timeline-container .timeline .timeline-inverted .timeline-panel .num {
+        left: auto;
+        right: 0; }
+      .Why .timeline-container .timeline .timeline-inverted .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 10px;
+        left: -10px;
+        right: auto; }
+
+/*====================== End Why use Shipthem  Section Styles ===================================*/
+/*====================== Start Count Styles ===================================*/
+.count {
+  padding: 0;
+  background-image: url(../img/count.png);
+  background-size: cover; }
+  .count .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    padding: 50px; }
+    .count .overlay .logo img {
+      width: 8%;
+      margin-top: -83px; }
+    .count .overlay .items {
+      color: #eee; }
+      .count .overlay .items i {
+        font-size: 70px;
+        margin: -50px 0 20px 0; }
+      .count .overlay .items h2 {
+        font-family: main_Re_font;
+        margin-bottom: 30px; }
+      .count .overlay .items h1 {
+        font-weight: bold;
+        font-size: 50px; }
+
+/*====================== End Count Styles ===================================*/
+/*====================== Start Reviews Styles ===================================*/
+.Reviews .carousel .carousel-inner .carousel-item {
+  background-image: url(../img/rev/Untitled-1.png); }
+  .Reviews .carousel .carousel-inner .carousel-item .user {
+    margin-top: 70px; }
+    .Reviews .carousel .carousel-inner .carousel-item .user .user-img {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      border: 3px solid #383538;
+      overflow: hidden;
+      padding: 0;
+      margin: 2px auto; }
+      .Reviews .carousel .carousel-inner .carousel-item .user .user-img img {
+        height: 110px;
+        width: 110px;
+        display: block;
+        margin: 2px auto;
+        border-radius: 50%;
+        border: 2px solid #f2f2f2; }
+    .Reviews .carousel .carousel-inner .carousel-item .user .name {
+      font-size: 20px;
+      margin: 20px 0 0 0;
+      color: #383538;
+      font-weight: bold; }
+    .Reviews .carousel .carousel-inner .carousel-item .user .job {
+      font-size: 12px;
+      color: #999; }
+  .Reviews .carousel .carousel-inner .carousel-item .caption {
+    margin: 30px 20%; }
+    .Reviews .carousel .carousel-inner .carousel-item .caption p {
+      font-size: 22px; }
+      .Reviews .carousel .carousel-inner .carousel-item .caption p i {
+        color: #E3212B; }
+
+.Reviews .carousel .carousel-control i {
+  color: #383538;
+  font-size: 25px; }
+
+/*====================== End Reviews Styles ===================================*/
+/*====================== Start Team Styles ===================================*/
+.team {
+  padding-bottom: 0; }
+  .team .team-members {
+    margin: 30px; }
+    .team .team-members .member {
+      margin: 20px 0;
+      text-align: center;
+      padding: 20px 10px;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .team .team-members .member:hover {
+        background-color: #f2f2f2; }
+        .team .team-members .member:hover .img-holder {
+          border-color: #E3212B !important; }
+          .team .team-members .member:hover .img-holder .overlay {
+            opacity: 1; }
+      .team .team-members .member .img-holder {
+        position: relative;
+        overflow: hidden;
+        margin: 2px auto;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 3px solid #383538;
+        padding: 3px;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+        .team .team-members .member .img-holder img {
+          max-width: 100%;
+          height: 158px;
+          width: 158px;
+          border-radius: 50%; }
+        .team .team-members .member .img-holder .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          background-color: #383538;
+          color: #eee;
+          padding: 20px;
+          opacity: 0;
+          -webkit-transition: all .4s ease-in-out;
+          -moz-transition: all .4s ease-in-out;
+          -ms-transition: all .4s ease-in-out;
+          -o-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out; }
+          .team .team-members .member .img-holder .overlay p.text {
+            font-size: 11px;
+            margin: 10px 0; }
+          .team .team-members .member .img-holder .overlay p.icons i {
+            width: 20px;
+            height: 20px;
+            line-height: 10px;
+            margin: 0 5px;
+            padding: 5px;
+            font-size: 13px;
+            background-color: #eee;
+            border-radius: 50%;
+            text-align: center;
+            color: #383538; }
+          .team .team-members .member .img-holder .overlay p.icons .fa-twitter {
+            background-color: #E3212B; }
+      .team .team-members .member .name {
+        font-family: main_Re_font;
+        font-size: 16px;
+        margin-top: 25px;
+        margin-bottom: 0; }
+      .team .team-members .member .job {
+        font-size: 11px;
+        color: #666; }
+  .team .for-more {
+    border-top: 1px solid #383538;
+    position: relative;
+    text-align: center; }
+    .team .for-more .title {
+      display: inline-block;
+      font-size: 35px;
+      font-family: main_Th_font;
+      background-color: #ececec;
+      padding: 8px;
+      margin-top: -38px;
+      margin-left: -40px;
+      z-index: 2;
+      position: absolute; }
+    .team .for-more .about {
+      padding: 40px 0;
+      background-image: url(../img/formore/aboutus.png);
+      background-size: cover;
+      background-color: #ececec;
+      text-align: right;
+      position: relative; }
+      .team .for-more .about .or {
+        position: absolute;
+        top: 30%;
+        right: -18px;
+        font-size: 18px;
+        display: inline-block;
+        padding: 15px 0;
+        border-left: 2px solid #383538;
+        background-color: #ececec; }
+        .team .for-more .about .or span {
+          margin-left: -12px;
+          background-color: #ececec; }
+      .team .for-more .about .btn {
+        margin-right: 15%;
+        padding: 7px 30px;
+        background-color: #E3212B;
+        color: #eee; }
+        .team .for-more .about .btn:hover {
+          color: #383538 !important; }
+    .team .for-more .contact {
+      padding: 40px 0;
+      text-align: left; }
+      .team .for-more .contact .btn {
+        margin-left: 15%;
+        padding: 7px 30px;
+        background-color: #fff;
+        color: #383538; }
+
+/*====================== End Team Styles ===================================*/
+/*====================== Start Footer Styles ===================================*/
+footer .main {
+  padding: 50px 0 30px 0;
+  background-color: #383538;
+  color: #8a888a;
+  border-bottom: 3px solid #E3212B; }
+  footer .main .logo img {
+    max-width: 100%; }
+  footer .main .content {
+    margin-top: 25px; }
+    footer .main .content p a {
+      color: #8a888a;
+      text-decoration: none; }
+    footer .main .content .service-ca {
+      position: relative; }
+      footer .main .content .service-ca::after {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #E3212B;
+        bottom: -10px;
+        left: 0; }
+    footer .main .content .service-li {
+      padding-left: 7px;
+      list-style: none; }
+      footer .main .content .service-li a {
+        color: #8a888a;
+        font-size: 13px;
+        margin-bottom: 7px;
+        display: inline-block; }
+        footer .main .content .service-li a i {
+          color: #8a888a; }
+    footer .main .content i {
+      color: #E3212B;
+      margin-right: 5px; }
+    footer .main .content .Social {
+      padding: 0;
+      list-style: none; }
+      footer .main .content .Social a {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-color: #8a888a;
+        border-radius: 50%;
+        line-height: 30px;
+        margin: 5px 10px;
+        text-align: center;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+        footer .main .content .Social a:hover {
+          background-color: #E3212B; }
+        footer .main .content .Social a i {
+          margin: 0;
+          color: #383538 !important; }
+
+footer .copy {
+  text-align: center;
+  padding: 15px;
+  background-color: #242324;
+  color: #8a888a; }
+  footer .copy p {
+    margin: 0; }
+  footer .copy a {
+    color: #E3212B !important; }
+
+/*====================== End Footer Styles ===================================*/
+/************************
+                Scroll to top button
+                    **************************/
+.scrollToTop {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 30px;
+  background: #383538;
+  font-weight: bold;
+  color: #E3212B;
+  text-decoration: none;
+  position: fixed;
+  bottom: 25px;
+  border: 1px solid #5a585a;
+  right: 25px;
+  display: none; }
+
+/*****************************************************************************
+    ******************************************************************
+        *********************************************************
+            *******************************************/
+/*========================== Animation ============================================*/
+/********************************************************/
+/*=============================== Responsive =============================*/
+@media (max-width: 1300px) {
+  .header .carousel .carousel-inner .slider-caption {
+    top: 10%; } }
+
+@media (max-width: 992px) {
+  .header .navbar .navbar-collapse li a {
+    text-align: center; }
+  .login-box {
+    display: block;
+    width: 100%;
+    background-color: #383538; }
+  .header .navbar .login-box ul .login, .header .navbar .login-box ul li {
+    padding: 10px 38px; }
+  .Price-Calc .item, .Price-Calc .item .icon {
+    padding: 5px 10px; }
+  .container {
+    max-width: 885px; }
+  .header .carousel .carousel-inner .slider-caption {
+    top: 22%; }
+  .header .carousel .carousel-indicators {
+    top: -10px; }
+  .Price-Calc .booking .Parcels {
+    width: 75px;
+    height: 139px; }
+  .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
+    width: 44%; } }
+
+@media (max-width: 700px) {
+  .header .carousel .carousel-inner .slider-caption {
+    width: 70%;
+    left: 30px; }
+  .header .carousel .carousel-indicators {
+    top: 20px;
+    right: 45px; }
+  .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
+    width: 42%; } }
+
+@media (max-width: 630px) {
+  .header .carousel .carousel-inner .slider-caption {
+    display: none !important; }
+  .header .carousel .carousel-indicators {
+    top: 40px; }
+  .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
+    width: 42%; } }
+
+@media (max-width: 575px) {
+  .header .carousel .carousel-indicators {
+    top: 50px; }
+  .Why .timeline-container .timeline:before, .Why .timeline-container .timeline li .timeline-badge {
+    left: 10%; }
+  .Why .timeline-container .timeline li:not(.timeline-inverted) {
+    padding-right: 0; }
+  .Why .timeline-container .timeline li .timeline-panel {
+    width: 80%;
+    float: right; }
+  .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
+    width: 80%; }
+  .Why .timeline-container .timeline li .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 10px;
+    left: -10px;
+    right: auto; }
+  .count .overlay .logo img {
+    width: 15%;
+    margin-top: -95px; }
+  .count .overlay .items div {
+    margin: 40px 0; }
+  footer .content {
+    margin-left: 0 !important; } }

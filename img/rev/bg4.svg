@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="321px" height="283px" viewBox="0 0 321 283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>“ copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="26.6539408%" y1="3.33198679%" x2="95.0645226%" y2="91.0322698%" id="linearGradient-1">
+            <stop stop-color="#D6D6D6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.242045969" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.478952892">
+        <g id="ConvertFox-Website-Final" transform="translate(-308.000000, -5515.000000)" fill="url(#linearGradient-1)">
+            <path d="M457.186037,5515 C347.192942,5522.58036 308,5584.48661 308,5667.87054 L308,5798 L457.186037,5798 L457.186037,5648.91964 L396.500191,5648.91964 C396.500191,5608.49107 409.143076,5580.69643 457.186037,5571.85268 L457.186037,5515 Z M629,5515 C519.006905,5522.58036 479.813963,5584.48661 479.813963,5667.87054 L479.813963,5798 L629,5798 L629,5648.91964 L568.314155,5648.91964 C568.314155,5608.49107 580.957039,5580.69643 629,5571.85268 L629,5515 Z" id="“-copy"></path>
+        </g>
+    </g>
+</svg>
