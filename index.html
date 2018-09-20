@@ -16,11 +16,13 @@
         <link rel="stylesheet" href="css/all.min.css">
         <!-- Bootstrap4 Plugin -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Animation Plugin -->
+        <link rel="stylesheet" href="css/animate.css"> 
         <!-- CSS StyleSheets -->
-      <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
       
-      <!-- Put favicon in the images folder -->
-      <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Put favicon in the images folder -->
+        <link rel="shortcut icon" href="img/favicon.png">
       
       <!--[if lt IE 9]>
           <link rel="stylesheet" href="css/ie.css">
@@ -30,7 +32,7 @@
   </head>
   <body>
       <!-- Start Header -->
-      <header class="header">
+      <header class="header header-home">
         
         <!-- Start Navbar -->
         <div class="container">
@@ -84,7 +86,7 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="slider-caption container d-flex flex-column justify-content-center">
+                <div class="slider-caption container d-flex flex-column justify-content-center wow fadeInUp" data-wow-duration="1s">
                     <h3>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </h3>
@@ -95,7 +97,7 @@
                 <img class="d-block w-100" src="img/cover/sea.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                  <div class="slider-caption  container d-flex flex-column justify-content-center">
+                  <div class="slider-caption  container d-flex flex-column justify-content-center wow fadeInUp" data-wow-duration="1s">
                       <h3>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </h3>
@@ -106,7 +108,7 @@
                 <img class="d-block w-100" src="img/cover/cont.png" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <div class="slider-caption container d-flex flex-column justify-content-center">
+                <div class="slider-caption container d-flex flex-column justify-content-center wow fadeInUp" data-wow-duration="1s">
                     <h3>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </h3>
@@ -140,7 +142,7 @@
           <!-- Boxes -->
           <div class="row text-center">
             <div class="col-md-3 col-sm-6">
-              <div class="item active">
+              <div class="item active wow slideInUp" data-wow-duration="1s">
                   <div class="icon">
                       <i class="fas fa-archive"></i>
                   </div>
@@ -148,7 +150,7 @@
               </div>
             </div>
             <div class="col-md-3 col-sm-6">
-              <div class="item">
+              <div class="item wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
                   <div class="icon">
                       <i class="fas fa-shopping-bag"></i> 
                   </div>
@@ -156,7 +158,7 @@
               </div>
             </div>  
             <div class="col-md-3 col-sm-6">  
-              <div class="item">
+              <div class="item wow slideInUp" data-wow-duration="1s" data-wow-delay=".6s">
                   <div class="icon">
                       <i class="fas fa-plane"></i>
                   </div>
@@ -164,7 +166,7 @@
               </div>
             </div>  
             <div class="col-md-3 col-sm-6">  
-              <div class="item">
+              <div class="item wow slideInRight" data-wow-duration="1s" data-wow-delay=".9s">
                   <div class="icon">
                       <i class="fas fa-ship"></i>
                   </div>
@@ -175,7 +177,7 @@
           <!-- /Boxes -->
 
           <!-- Booking -->
-          <div class="booking grey">
+          <div class="booking grey wow zoomIn" data-wow-duration="1s" data-wow-delay="1.2s">
             <div class="row">
               <div class="col-md-1 col-sm-3 col-3">
                 <div class="Parcels d-flex flex-column justify-content-between">
@@ -239,7 +241,7 @@
             </div>
             <!-- /Section Title -->
             <!-- Boxes -->
-            <div class="tabs text-center">
+            <div class="tabs text-center wow fadeInUp" data-wow-duration="1s">
                 <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link " id="Shop-tab" data-toggle="tab" href="#Shop" role="tab" aria-controls="Shop" aria-selected="true">
@@ -281,17 +283,102 @@
                 <li data-target="#carouselExample2Indicators" data-slide-to="3"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url('img/Howwork/air-01.png')">
-                 
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-3 slide-part part1-1">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Book a collection</p>
+                      </div>
+                    </div>
+                    <div class="col-3 slide-part part1-2">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Shipping carrier pickup </p>
+                      </div>
+                    </div>
+                    <div class="col-3 slide-part part1-3">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Air transit   </p>
+                      </div>
+                    </div>
+                    <div class="col-3 slide-part part1-4">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p> Deliver your package  </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('img/Howwork/sea-01.png')">
-                
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4 slide-part part2-1">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Book a collection</p>
+                      </div>
+                    </div>
+                    <div class="col-4 slide-part part2-2">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Shipping carrier pickup </p>
+                      </div>
+                    </div>
+                    <div class="col-4 slide-part part2-3">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Air transit   </p>
+                      </div>
+                    </div>
+                    
+                  </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('img/Howwork/ship-01.png')">
-                  
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4 slide-part part3-1">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Book a collection</p>
+                      </div>
+                    </div>
+                    <div class="col-4 slide-part part3-2">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Shipping carrier pickup </p>
+                      </div>
+                    </div>
+                    <div class="col-4 slide-part part3-3">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Air transit   </p>
+                      </div>
+                    </div>
+                    
+                  </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('img/Howwork/shopper-01-01.png')">
-                  
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4 slide-part part4-1">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Book a collection</p>
+                      </div>
+                    </div>
+                    <div class="col-4 slide-part part4-2">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Shipping carrier pickup </p>
+                      </div>
+                    </div>
+                    <div class="col-4 slide-part part4-3">
+                      <div class="slide-text">
+                        <h3>Step</h3>
+                        <p>Air transit   </p>
+                      </div>
+                    </div>
+                    
+                  </div>
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExample2Indicators" role="button" data-slide="prev">
@@ -317,8 +404,8 @@
                     <div class="divider"></div>
                     <div class="items text-center">
                         <div class="row">
-                            <div class="col-md-9">
-                                <div class="main">
+                            <div class="col-md-9 wow slideInLeft" data-wow-duration="1s">
+                                <div class="main ">
                                     <i class="fas fa-ship"></i>Sea cargo
                                 </div>
                                 <div class="sub-items d-flex justify-content-between">
@@ -338,7 +425,7 @@
                                   </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 wow slideInRight" data-wow-duration="1s" data-wow-delay=".2s">
                                 <div class="main">
                                     <i class="fas fa-plane"></i>Air cargo
                                 </div>
@@ -374,7 +461,7 @@
                 <ul class="timeline">
                   <li>
                     <div class="timeline-badge"><i class="fas fa-file-invoice-dollar"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel wow fadeInUp" data-wow-duration="1s">
                       <span class="num">01</span>
                       Track all your shipments online using website or mobile app.
                     </div>
@@ -382,7 +469,7 @@
                   </li>
                   <li class="timeline-inverted active">
                     <div class="timeline-badge"><i class="fas fa-user-tie"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel wow fadeInUp" data-wow-duration="1s">
                       <span class="num">02</span>
                       Dedicated customer service on social media, email, and phone.
                     </div>
@@ -390,7 +477,7 @@
                   </li>
                   <li>
                     <div class="timeline-badge"><i class="fas fa-tags"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel wow fadeInUp" data-wow-duration="1s">
                       <span class="num">03</span>
                       Universal shipping prices to all customers.
                     </div>
@@ -398,7 +485,7 @@
                   </li>
                   <li class="timeline-inverted">
                     <div class="timeline-badge"><i class="fab fa-cc-visa"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel wow fadeInUp" data-wow-duration="1s">
                       <span class="num">04</span>  
                       Pricing transparency, all prices are available instantly online.
                     </div>
@@ -406,7 +493,7 @@
                   </li>
                   <li>
                     <div class="timeline-badge"><i class="fas fa-thumbs-up"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel wow fadeInUp" data-wow-duration="1s">
                       <span class="num">05</span>
                       Low cost, especially when it comes to services to Libyans! It’s to cheapest in the UK.
                     </div>
@@ -414,7 +501,7 @@
                   </li>
                   <li class="timeline-inverted">
                     <div class="timeline-badge"><i class="fas fa-hourglass-half"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel wow fadeInUp" data-wow-duration="1s">
                       <span class="num">06</span>
                       Time saving! No need for calling back or phone random quiries, it’s just possible and available online to everyone. 
                     </div>
@@ -422,7 +509,7 @@
                   </li>
                   <li>
                     <div class="timeline-badge"><i class="fas fa-cart-arrow-down"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel wow fadeInUp" data-wow-duration="1s">
                       <span class="num">07</span>
                       Shop & ship to destination directly, without having to revive the product and ship to us.
                     </div>
@@ -443,12 +530,12 @@
                 <img src="img/Logo/ICON LOGO bb.svg">
              </div>
              <div class="row items text-center">
-                <div class="col-sm-6">
+                <div class="col-sm-6 wow fadeInUp" data-wow-duration="1s">
                   <i class="fas fa-user"></i>
                   <h2>Registered users </h2>
                   <h1>1.5M</h1>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 wow fadeInUp" data-wow-duration="1s">
                   <i class="fas fa-layer-group"></i>
                   <h2>Total shipthem orders </h2>
                   <h1>100M</h1>
@@ -545,7 +632,7 @@
               <div class="team-members">
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="member">
+                    <div class="member wow fadeInUp" data-wow-duration="1s">
                       <div class="img-holder">
                         <img src="img/team/person-6.jpg">
                         <div class="overlay">
@@ -562,7 +649,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="member">
+                    <div class="member wow fadeInUp" data-wow-duration="1s">
                       <div class="img-holder">
                         <img src="img/team/pexels-photo-220453.jpeg">
                         <div class="overlay">
@@ -579,7 +666,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="member">
+                    <div class="member wow fadeInUp" data-wow-duration="1s">
                       <div class="img-holder">
                         <img src="img/team/schwarze-haare-maenner-intro.jpg">
                         <div class="overlay">
@@ -606,13 +693,13 @@
               <div class="row m-0">
                 <div class="col-6 p-0">
                   <div class="about">
-                    <a href="about.html" class="btn"><i class="fas fa-users"></i> About Us</a>
+                    <a href="about.html" class="btn wow fadeInUp" data-wow-duration="1s"><i class="fas fa-users"></i> About Us</a>
                     <p class="or"><span>OR</span></p>
                   </div>
                 </div>
                 <div class="col-6 p-0">
                   <div class="contact">
-                    <a href="contact.html" class="btn"><i class="fas fa-paper-plane"></i> Contact Us</a>
+                    <a href="contact.html" class="btn wow fadeInUp" data-wow-duration="1s"><i class="fas fa-paper-plane"></i> Contact Us</a>
                   </div>
                 </div>
               </div> 
@@ -631,35 +718,35 @@
             <div class="container">
                 <div class="row text-left logo">
                   <div class="col-md-3 col-sm-6">
-                    <img src="img/Logo/LOGO 3.png" class="img">
+                    <img src="img/Logo/LOGO 3.png" class="img wow fadeInUp" data-wow-duration="1s">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-6">
                     <div class="content">
-                      <p>Is a UK limited company operates in Dorset/south of England.It is managed by mix of talented international staff who come from different backgrounds. 
+                      <p class="wow fadeInUp" data-wow-duration="1s">Is a UK limited company operates in Dorset/south of England.It is managed by mix of talented international staff who come from different backgrounds. 
                       </p>
-                      <p><i class="fas fa-phone"></i> <span>07227333744</span></p>
-                      <p><i class="fas fa-envelope"></i> <span>Sales@shipthem.net</span></p>
-                      <p><i class="fas fa-map-marker-alt"></i> <span>Lorem ipsum dolor sit amet</span></p>
+                      <p class="wow fadeInUp" data-wow-duration="1s"><i class="fas fa-phone"></i> <span>07227333744</span></p>
+                      <p class="wow fadeInUp" data-wow-duration="1s"><i class="fas fa-envelope"></i> <span>Sales@shipthem.net</span></p>
+                      <p class="wow fadeInUp" data-wow-duration="1s"><i class="fas fa-map-marker-alt"></i> <span>Lorem ipsum dolor sit amet</span></p>
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-6">
                     <div class="content ml-5">
-                      <p><a href="about.html">About Us</a></p>
-                      <p><a href="contact.html">Contact Us</a></p>
-                      <p class="service-ca">Service</p>
+                      <p class="wow fadeInUp" data-wow-duration="1s"><a href="about.html">About Us</a></p>
+                      <p class="wow fadeInUp" data-wow-duration="1s"><a href="contact.html">Contact Us</a></p>
+                      <p class="service-ca wow fadeInUp" data-wow-duration="1s">Service</p>
                       <ul class="service-li">
-                        <li>
+                        <li class="wow fadeInUp" data-wow-duration="1s">
                           <a href="#"><i class="fas fa-archive"></i>Shop &amp; Ship </a>
                         </li>
-                        <li>
+                        <li class="wow fadeInUp" data-wow-duration="1s">
                           <a href="#"><i class="fas fa-plane"></i>Air Freight</a>
                         </li>
-                        <li>
+                        <li class="wow fadeInUp" data-wow-duration="1s">
                           <a href="#"><i class="fas fa-ship"></i>Sea Freight</a>
                         </li>
-                        <li>
+                        <li class="wow fadeInUp" data-wow-duration="1s">
                           <a href="#"><i class="fas fa-shopping-bag"></i> Personal Shopper</a>
                         </li> 
                       </ul>
@@ -667,18 +754,18 @@
                   </div>
                   <div class="col-md-4 col-sm-6">
                       <div class="content ml-5 speciall">
-                          <p><a href="#">SHIPTHEM LTD</a></p>
-                          <p><a href="#">Terms and conditions </a></p>
-                          <p><a href="#">Porhibted items </a></p>
-                          <p>Folow Us</p>
+                          <p class="wow fadeInUp" data-wow-duration="1s"><a href="#">SHIPTHEM LTD</a></p>
+                          <p class="wow fadeInUp" data-wow-duration="1s"><a href="#">Terms and conditions </a></p>
+                          <p class="wow fadeInUp" data-wow-duration="1s"><a href="#">Porhibted items </a></p>
+                          <p class="wow fadeInUp" data-wow-duration="1s">Folow Us</p>
                           <ul class="Social d-flex justify-content-start">
-                            <li>
+                            <li class="wow fadeInUp" data-wow-duration="1s">
                               <a href="#"><i class="fab fa-facebook-f"></i></a>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp" data-wow-duration="1s">
                               <a href="#"><i class="fab fa-twitter"></i></a>
                             </li>
-                            <li>
+                            <li class="wow fadeInUp" data-wow-duration="1s">
                               <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             </li>
                             
@@ -703,8 +790,11 @@
         <script src="js/jquery-3.3.1.min.js"></script>
         <!-- Bootstrap Plugin -->
         <script src="js/bootstrap.min.js"></script>
-        <!-- Slider Plugin -->
-        <script src="js/jssor.slider-27.5.0.min.js"></script>
+        <!-- Animation Plugin -->
+        <script src="js/wow.min.js"></script>
+        <!-- Easy scroll -->
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <!-- Google Map Plugin -->
         <!-- Custom Script -->
         <script src="js/main.js"></script>
       <!-- js Scripts End -->

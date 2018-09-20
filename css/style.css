@@ -10,7 +10,8 @@
 body {
   font-family: main_Re_font;
   font-size: 14px;
-  background-color: #ececec; }
+  background-color: #ececec;
+  overflow-x: hidden; }
 
 p, a, li {
   font-family: main_Re_font;
@@ -381,6 +382,87 @@ a:hover {
     max-width: 100%;
     background-size: contain;
     background-repeat: no-repeat; }
+    .how .carousel-inner .carousel-item .slide-part {
+      background-size: cover;
+      height: 500px; }
+    .how .carousel-inner .carousel-item .part1-1 {
+      background-image: url(../img/Howwork/slide1/001.png); }
+      .how .carousel-inner .carousel-item .part1-1 .slide-text {
+        text-align: center;
+        margin-top: 55%;
+        margin-left: 40%; }
+    .how .carousel-inner .carousel-item .part1-2 {
+      background-image: url(../img/Howwork/slide1/002.png); }
+      .how .carousel-inner .carousel-item .part1-2 .slide-text {
+        text-align: left;
+        margin-top: 100%;
+        margin-left: 10%; }
+    .how .carousel-inner .carousel-item .part1-3 {
+      background-image: url(../img/Howwork/slide1/003.png); }
+      .how .carousel-inner .carousel-item .part1-3 .slide-text {
+        text-align: left;
+        margin-top: 55%;
+        margin-left: 10%; }
+    .how .carousel-inner .carousel-item .part1-4 {
+      background-image: url(../img/Howwork/slide1/004.png); }
+      .how .carousel-inner .carousel-item .part1-4 .slide-text {
+        text-align: left;
+        margin-top: 75%;
+        margin-left: 10%; }
+    .how .carousel-inner .carousel-item .part2-1 {
+      background-image: url(../img/Howwork/slide2/001.png); }
+      .how .carousel-inner .carousel-item .part2-1 .slide-text {
+        text-align: left;
+        margin-top: 35%;
+        margin-left: 25%; }
+    .how .carousel-inner .carousel-item .part2-2 {
+      background-image: url(../img/Howwork/slide2/002.png); }
+      .how .carousel-inner .carousel-item .part2-2 .slide-text {
+        text-align: left;
+        margin-top: 90%;
+        margin-left: 10%; }
+    .how .carousel-inner .carousel-item .part2-3 {
+      background-image: url(../img/Howwork/slide2/003.png); }
+      .how .carousel-inner .carousel-item .part2-3 .slide-text {
+        text-align: left;
+        margin-top: 45%;
+        margin-left: 10%; }
+    .how .carousel-inner .carousel-item .part3-1 {
+      background-image: url(../img/Howwork/slide3/001.png); }
+      .how .carousel-inner .carousel-item .part3-1 .slide-text {
+        text-align: left;
+        margin-top: 35%;
+        margin-left: 25%; }
+    .how .carousel-inner .carousel-item .part3-2 {
+      background-image: url(../img/Howwork/slide3/002.png); }
+      .how .carousel-inner .carousel-item .part3-2 .slide-text {
+        text-align: left;
+        margin-top: 90%;
+        margin-left: 10%; }
+    .how .carousel-inner .carousel-item .part3-3 {
+      background-image: url(../img/Howwork/slide3/003.png); }
+      .how .carousel-inner .carousel-item .part3-3 .slide-text {
+        text-align: left;
+        margin-top: 45%;
+        margin-left: 10%; }
+    .how .carousel-inner .carousel-item .part4-1 {
+      background-image: url(../img/Howwork/slide4/001.png); }
+      .how .carousel-inner .carousel-item .part4-1 .slide-text {
+        text-align: left;
+        margin-top: 35%;
+        margin-left: 25%; }
+    .how .carousel-inner .carousel-item .part4-2 {
+      background-image: url(../img/Howwork/slide4/002.png); }
+      .how .carousel-inner .carousel-item .part4-2 .slide-text {
+        text-align: left;
+        margin-top: 90%;
+        margin-left: 10%; }
+    .how .carousel-inner .carousel-item .part4-3 {
+      background-image: url(../img/Howwork/slide4/003.png); }
+      .how .carousel-inner .carousel-item .part4-3 .slide-text {
+        text-align: left;
+        margin-top: 45%;
+        margin-left: 10%; }
 
 .how .carousel-control-prev i, .how .carousel-control-next i {
   color: #383538;
@@ -545,10 +627,14 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
-    padding: 50px; }
-    .count .overlay .logo img {
-      width: 8%;
-      margin-top: -83px; }
+    padding: 50px 0;
+    position: relative; }
+    .count .overlay .logo {
+      height: 50px; }
+      .count .overlay .logo img {
+        width: 8%;
+        top: 0;
+        position: absolute; }
     .count .overlay .items {
       color: #eee; }
       .count .overlay .items i {
@@ -828,6 +914,109 @@ footer .copy {
             *******************************************/
 /*========================== Animation ============================================*/
 /********************************************************/
+/*************************************************************************************/
+/**************************************************************************************/
+/*================================= ABOUT PAGE STYLE ================================*/
+/* START ABOUT HEADER STYLE */
+.header-about {
+  background-image: url(../img/cover/about.png);
+  background-size: cover; }
+  .header-about .about-text {
+    padding-top: 12%;
+    padding-bottom: 30px;
+    color: #eee; }
+    .header-about .about-text h1 {
+      color: #fff;
+      margin: 80px 0; }
+    .header-about .about-text p {
+      margin: 20px 13%;
+      font-size: 21px; }
+
+/* End ABOUT HEADER STYLE */
+/* START HOUSE NUM STYLE */
+.H-num {
+  background-color: #E3212B; }
+  .H-num h2 {
+    font-family: main_Re_font;
+    color: #eee; }
+  .H-num h3 {
+    color: #fff;
+    margin: 25px 0 0 0;
+    font-size: 40px; }
+
+/* End HOUSE NUM STYLE */
+/* START INFO STYLE */
+.info p.main {
+  font-size: 21px;
+  margin-bottom: 20px; }
+
+.info .holder {
+  margin: 20px 0; }
+  .info .holder .img-holder {
+    width: 100px; }
+    .info .holder .img-holder img {
+      max-width: 100%; }
+
+.info .text {
+  margin: 15px 10px;
+  font-weight: bold; }
+  .info .text .main-color {
+    color: #E3212B; }
+
+/* END INFO STYLE */
+/**************************************************************************
+****************************************************************************
+*****************************************************************************
+****************************************************************************/
+/*************************** Contact Page Styling ********************************/
+.header-contact {
+  background-color: #383538;
+  height: 60px; }
+
+.contact {
+  padding: 0; }
+  .contact #map {
+    height: 100%;
+    min-height: 350px; }
+  .contact #con {
+    background-color: #383538; }
+  .contact .contact-holder {
+    padding-top: 50px;
+    color: #fff; }
+  .contact .contact-form {
+    background-color: #383538;
+    padding: 30px 20px;
+    color: #eee; }
+    .contact .contact-form .form-control {
+      background-color: #383538;
+      border-radius: 0;
+      font-size: 14px;
+      border: 1px solid #5a585a;
+      color: #d4d4d4; }
+    .contact .contact-form .control-label {
+      color: #999394; }
+    .contact .contact-form .btn {
+      background-color: #E3212B;
+      color: #fff;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .contact .contact-form .btn:hover {
+        background-color: #be1e26; }
+  .contact .contact-footer {
+    background-color: #242324;
+    padding: 15px;
+    color: #d4d4d4;
+    border-top: 3px solid #E3212B; }
+    .contact .contact-footer i {
+      color: #E3212B; }
+
+/*********************************************************************************
+*******************************************************************************
+*****************************************************************************
+***************************************************/
 /*=============================== Responsive =============================*/
 @media (max-width: 1300px) {
   .header .carousel .carousel-inner .slider-caption {
@@ -836,6 +1025,8 @@ footer .copy {
 @media (max-width: 992px) {
   .header .navbar .navbar-collapse li a {
     text-align: center; }
+  .header-contact {
+    height: 98px; }
   .login-box {
     display: block;
     width: 100%;
@@ -853,8 +1044,29 @@ footer .copy {
   .Price-Calc .booking .Parcels {
     width: 75px;
     height: 139px; }
+  .how .carousel-inner .carousel-item .part1-2 .slide-text {
+    margin-top: 135%; }
+  .how .carousel-inner .carousel-item .part1-3 .slide-text {
+    margin-top: 80%; }
+  .how .carousel-inner .carousel-item .part1-4 .slide-text {
+    margin-top: 100%; }
   .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
     width: 44%; } }
+
+@media (max-width: 800px) {
+  .header .container {
+    width: 100% !important;
+    padding: 0 !important; }
+  .header .navbar {
+    height: 100px !important; }
+  .header .carousel {
+    margin-top: 60px !important; }
+  .header .carousel .carousel-inner .slider-caption {
+    top: 11% !important;
+    left: 30px !important;
+    width: 70% !important; }
+  .how .carousel-inner .carousel-item .part3-2 .slide-text, .how .carousel-inner .carousel-item .part2-2 .slide-text, .how .carousel-inner .carousel-item .part4-2 .slide-text {
+    margin-top: 120%; } }
 
 @media (max-width: 700px) {
   .header .carousel .carousel-inner .slider-caption {
@@ -864,7 +1076,9 @@ footer .copy {
     top: 20px;
     right: 45px; }
   .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
-    width: 42%; } }
+    width: 42%; }
+  .how .carousel-inner, .how .carousel-inner .carousel-item .slide-part {
+    height: 350px; } }
 
 @media (max-width: 630px) {
   .header .carousel .carousel-inner .slider-caption {
@@ -876,7 +1090,9 @@ footer .copy {
 
 @media (max-width: 575px) {
   .header .carousel .carousel-indicators {
-    top: 50px; }
+    top: 20px; }
+  .how .carousel-inner, .how .carousel-inner .carousel-item .slide-part {
+    height: 250px; }
   .Why .timeline-container .timeline:before, .Why .timeline-container .timeline li .timeline-badge {
     left: 10%; }
   .Why .timeline-container .timeline li:not(.timeline-inverted) {
@@ -892,8 +1108,7 @@ footer .copy {
     left: -10px;
     right: auto; }
   .count .overlay .logo img {
-    width: 15%;
-    margin-top: -95px; }
+    width: 15%; }
   .count .overlay .items div {
     margin: 40px 0; }
   footer .content {

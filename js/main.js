@@ -5,12 +5,12 @@ $(document).ready(function(){
     //set header height
    if(innerWidth > 1100){
     var internal_height = $(window).innerHeight();
-    $('header, header .carousel-inner').css('height', internal_height);
+    $('.header-home, .header-about, header .carousel-inner').css('height', internal_height);
    }
    
    //Slider
    $('.carousel').carousel({
-    interval: 5000
+    interval: 4000
   })
 
    //services text
@@ -48,5 +48,22 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop : 0},800);
         return false;
     });
-   
+
+    //animation
+    wow = new WOW(
+        {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      }
+      )
+      wow.init();
+
+    //smooth scroll
+    $("body").niceScroll({
+        cursorcolor:"#E3212B"
+        });  
+        
 });

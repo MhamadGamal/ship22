@@ -18,7 +18,8 @@ $grey: #f2f2f2;
 body{
   font-family: main_Re_font;
   font-size: 14px;
-  background-color: #ececec
+  background-color: #ececec;
+  overflow-x: hidden;
 }
 p, a, li{
     font-family: main_Re_font;
@@ -125,6 +126,10 @@ a:hover{
                     a{
                         font-size: 13px;
                         color: $secondary_text_light_color;
+                        &:hover{
+                            color: $main_bg_dark !important;
+                            font-weight: bold
+                        }
                     }
                 }
                 .lang{
@@ -135,6 +140,18 @@ a:hover{
                     }
                 }
             }
+        }
+        .navbar-toggler{
+            color: $main_color;
+            padding: 0;
+            margin: 12px 15px 0 0;
+            font-size: 27px;
+            &:focus{
+                outline: none
+            }
+        }
+        .navbar-nav{
+            background-color: $main_bg_dark
         }
     }
     .carousel{
@@ -154,6 +171,7 @@ a:hover{
             flex-direction: column;
             height: 100%;
             margin: 0;
+            top: -40px;
             li{
                 width: 3px;
                 height: 40px;
@@ -188,7 +206,7 @@ a:hover{
             .slider-caption{
                 position: absolute;
                 color: $main_text_light_color;
-                width: 50%;
+                width: 60%;
                 left: 97px;
                 margin-top: -40px;
                 height: 100%;
@@ -211,14 +229,48 @@ a:hover{
             }
         }
     }
-    #Slider{
+    .vertical .carousel-inner {
+        height: 100%;
+      }
+      
+      .carousel.vertical .carousel-item {
+         -webkit-transition: 0.6s ease-in-out top;
+         -moz-transition: 0.6s ease-in-out top;
+         -o-transition: 0.6s ease-in-out top;
+         transition: 0.6s ease-in-out top;
+      }
+      
+      .carousel.vertical .active {
+         top: 0;
+        
+      }
+      
+      
+      
+      .carousel.vertical .carousel-item {
+         left: 0;
+        
+      }
+    /*#Slider{
         position: relative;
         .Slider-indicators{
             position: absolute;
             right: 5%;
-            margin-top: 25%;
+            margin-top: 20%;
             color: $main_text_light_color;
             z-index: 6;
+            li{
+                a{
+                    display: inline-block;
+                    margin: 0;
+                    font-size: 35px;
+                    color: $main_text_light_color;
+                    &:hover{
+                        text-decoration: none;
+                        color: $main_text_light_color !important
+                    }
+                }
+            }
         }
         .slides {
             overflow: hidden;
@@ -231,7 +283,7 @@ a:hover{
                 z-index: 1;
                 .slider-caption{
                     position: absolute;
-                    margin-top: 25%;
+                    margin-top: 20%;
                     left: 5%;
                     width: 60%;
                     color: $main_text_light_color
@@ -245,15 +297,18 @@ a:hover{
                 }
                 &:target {
                     z-index: 3;
-                    -webkit-animation: slide 1s 1;
+                    -webkit-animation: slide 3s 1;
+                    animation: slide 3s 1;
                 }
                 &:not(:target) {
-                    -webkit-animation: hidden 1s 1;
+                    -webkit-animation: hidden 3s 1;
+                    animation: hidden 3s 1;
                 }
+
             }
 
         }
-    }
+    }*/
 }
 /*====================== End Header Styles ===================================*/
 
@@ -422,20 +477,132 @@ a:hover{
             -moz-background-size: contain;
             -o-background-size: contain;
             background-size: contain;
-            background-repeat: no-repeat
+            background-repeat: no-repeat;
+            .slide-part{
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; 
+                height: 500px;
+            }
+            .part1-1{
+                background-image: url(../img/Howwork/slide1/001.png);
+                .slide-text{
+                    text-align: center;
+                    margin-top: 55%;
+                    margin-left: 40%;
+                }
+            }
+            .part1-2{
+                background-image: url(../img/Howwork/slide1/002.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 100%;
+                    margin-left: 10%;
+                }
+            }
+            .part1-3{
+                background-image: url(../img/Howwork/slide1/003.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 55%;
+                    margin-left: 10%;
+                }
+            }
+            .part1-4{
+                background-image: url(../img/Howwork/slide1/004.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 75%;
+                    margin-left: 10%;
+                }
+            }
+            .part2-1{
+                background-image: url(../img/Howwork/slide2/001.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 35%;
+                    margin-left: 25%;
+                }
+            }
+            .part2-2{
+                background-image: url(../img/Howwork/slide2/002.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 90%;
+                    margin-left: 10%;
+                }
+            }
+            .part2-3{
+                background-image: url(../img/Howwork/slide2/003.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 45%;
+                    margin-left: 10%;
+                }
+            }
+            .part3-1{
+                background-image: url(../img/Howwork/slide3/001.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 35%;
+                    margin-left: 25%;
+                }
+            }
+            .part3-2{
+                background-image: url(../img/Howwork/slide3/002.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 90%;
+                    margin-left: 10%;
+                }
+            }
+            .part3-3{
+                background-image: url(../img/Howwork/slide3/003.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 45%;
+                    margin-left: 10%;
+                }
+            }
+            .part4-1{
+                background-image: url(../img/Howwork/slide4/001.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 35%;
+                    margin-left: 25%;
+                }
+            }
+            .part4-2{
+                background-image: url(../img/Howwork/slide4/002.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 90%;
+                    margin-left: 10%;
+                }
+            }
+            .part4-3{
+                background-image: url(../img/Howwork/slide4/003.png);
+                .slide-text{
+                    text-align: left;
+                    margin-top: 45%;
+                    margin-left: 10%;
+                }
+            }
         }
     }
     .carousel-control-prev i, .carousel-control-next i{
         color: #383538;
         font-size: 45px
     }
+    .carousel-indicators .active {
+        background-color: #4c4747;
+    }
+    .carousel-indicators li {
+        background-color: rgb(197, 192, 192);
+    }
 }
-.carousel-indicators .active {
-    background-color: #4c4747;
-}
-.carousel-indicators li {
-    background-color: rgb(197, 192, 192);
-}
+
 /*====================== End  How It Works  Section Styles ===================================*/
 
 /*====================== Start Special Services  Section Styles ===================================*/
@@ -640,15 +807,19 @@ a:hover{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
     .overlay{
         background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
         height: 100%;
-        padding: 50px;
+        padding: 50px 0;
+        position: relative;
         .logo{
+            height: 50px;
             img{
                 width: 8%;
-                margin-top: -83px;
+                top: 0;
+                position: absolute;
             }
         }
         .items{
@@ -980,91 +1151,260 @@ footer{
 }
 /*====================== End Footer Styles ===================================*/
 
+/************************
+                Scroll to top button
+                    **************************/
+.scrollToTop{
+    width:50px; 
+    height:50px;
+    padding:10px;
+    line-height: 20px; 
+    text-align:center;
+    font-size: 30px; 
+    background: $main_bg_dark;
+    font-weight: bold;
+    color: $main_color;
+    text-decoration: none;
+    position:fixed;
+    bottom:25px;
+    border: 1px solid #5a585a;
+    right:25px;
+    display: none;
+}    
 /*****************************************************************************
     ******************************************************************
         *********************************************************
             *******************************************/
 /*========================== Animation ============================================*/            
-@-webkit-keyframes slide {
-    0% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-    100% {
-      -webkit-transform: translateY(0%);
-              transform: translateY(0%);
-    }
-    }
 
-    @-moz-keyframes slide {
-    0% {
-      -webkit-transform: translateY(-100%);
-              -moz-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-    100% {
-      -webkit-transform: translateY(0%);
-              -moz-transform: translateY(0%);
-              transform: translateY(0%);
-    }
-    }
 
-    @-o-keyframes slide {
-    0% {
-      -webkit-transform: translateY(-100%);
-              -o-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-    100% {
-      -webkit-transform: translateY(0%);
-              -o-transform: translateY(0%);
-              transform: translateY(0%);
-    }
-    }
+    /********************************************************/
 
-    @keyframes slide {
-    0% {
-      -webkit-transform: translateY(-100%);
-              -moz-transform: translateY(-100%);
-              -o-transform: translateY(-100%);
-              transform: translateY(-100%);
+/*************************************************************************************/
+
+/**************************************************************************************/
+/*================================= ABOUT PAGE STYLE ================================*/
+/* START ABOUT HEADER STYLE */
+.header-about{
+    background-image: url(../img/cover/about.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .about-text{
+        padding-top: 12%;
+        padding-bottom: 30px;
+        color: $secondary_text_light_color;
+        h1{
+            color: $main_text_light_color;
+            margin: 80px 0;
+        }
+        p{
+            margin: 20px 13%;
+            font-size: 21px
+        }
     }
-    100% {
-      -webkit-transform: translateY(0%);
-              -moz-transform: translateY(0%);
-              -o-transform: translateY(0%);
-              transform: translateY(0%);
+}
+/* End ABOUT HEADER STYLE */
+/* START HOUSE NUM STYLE */
+.H-num{
+    background-color: $main_color;
+    h2{
+        font-family: main_Re_font;
+        color: $secondary_text_light_color
     }
+    h3{
+        color: $main_text_light_color;
+        margin: 25px 0 0 0;
+        font-size: 40px
     }
-    @-webkit-keyframes hidden {
-    0% {
-      z-index: 2;
+}
+/* End HOUSE NUM STYLE */
+/* START INFO STYLE */
+.info{
+    p.main{
+        font-size: 21px;
+        margin-bottom: 20px;
     }
-    100% {
-      z-index: 2;
+    .holder{
+        margin: 20px 0;
+        .img-holder{
+            width: 100px;
+            img{
+                max-width: 100%;
+            }
+        }
     }
+    .text{
+        margin: 15px 10px;
+        font-weight: bold;
+        .main-color{
+            color: $main_color
+        }
     }
-    @-moz-keyframes hidden {
-    0% {
-      z-index: 2;
+}
+/* END INFO STYLE */
+/**************************************************************************
+****************************************************************************
+*****************************************************************************
+****************************************************************************/
+/*************************** Contact Page Styling ********************************/
+
+.header-contact{
+    background-color: $main_bg_dark;
+    height: 60px;
+}
+.contact{
+    padding: 0;
+    #map{
+        height: 400px;
     }
-    100% {
-      z-index: 2;
+    .contact-holder{
+        background-color: $main_bg_dark;
+        padding: 30px 20px;
     }
+}
+
+/*********************************************************************************
+*******************************************************************************
+*****************************************************************************
+***************************************************/
+
+    /*=============================== Responsive =============================*/
+    @media(max-width: 1300px){
+        .header .carousel .carousel-inner .slider-caption{
+            top: 10%
+        }
     }
-    @-o-keyframes hidden {
-    0% {
-      z-index: 2;
+    @media (max-width: 992px){
+        .header .navbar .navbar-collapse li a{
+            text-align: center
+        }
+        .login-box{
+            display: block;
+            width: 100%;
+            background-color: $main_bg_dark
+        }
+        .header .navbar .login-box ul .login, .header .navbar .login-box ul li {
+            padding: 10px 38px;
+        }
+        .Price-Calc .item, .Price-Calc .item .icon{
+            padding: 5px 10px
+        }
+        .container {
+            max-width: 885px;
+        }
+        .header .carousel .carousel-inner .slider-caption{
+            top: 22%;
+        }
+        .header .carousel .carousel-indicators{
+            top: -10px
+        }
+        .Price-Calc .booking .Parcels{
+            width: 75px;
+            height: 139px;
+        }
+
+        .how .carousel-inner .carousel-item .part1-2 .slide-text{
+            margin-top: 135%
+        }
+        .how .carousel-inner .carousel-item .part1-3 .slide-text{
+            margin-top: 80%
+        }
+        .how .carousel-inner .carousel-item .part1-4 .slide-text{
+            margin-top: 100%
+        }
+
+        .Why .timeline-container .timeline .timeline-inverted .timeline-panel{
+            width: 44%
+        }
     }
-    100% {
-      z-index: 2;
+    @media (max-width: 800px){
+        
+        .header .container{
+            width: 100% !important;
+            padding: 0 !important
+        }
+        .header .navbar{
+            height: 100px !important;
+        }
+        .header .carousel{
+            margin-top: 60px !important
+        }
+        .header .carousel .carousel-inner .slider-caption{
+            top: 11% !important;
+            left: 30px !important;
+            width: 70% !important
+        }
+        .how .carousel-inner .carousel-item .part3-2 .slide-text,.how .carousel-inner .carousel-item .part2-2 .slide-text,.how .carousel-inner .carousel-item .part4-2 .slide-text{
+            margin-top: 120%
+        }
     }
+    @media (max-width: 700px){
+        
+        .header .carousel .carousel-inner .slider-caption{
+            width: 70%;
+            left: 30px;
+        }
+        .header .carousel .carousel-indicators{
+            top: 20px;
+            right: 45px
+        }
+        .Why .timeline-container .timeline .timeline-inverted .timeline-panel{
+            width: 42%
+        }
+        .how .carousel-inner, .how .carousel-inner .carousel-item .slide-part{
+            height: 350px;
+        }
     }
-    @keyframes hidden {
-    0% {
-      z-index: 2;
+    @media (max-width: 630px){
+        
+        .header .carousel .carousel-inner .slider-caption{
+            display: none !important    
+        }
+        .header .carousel .carousel-indicators{
+            top: 40px
+        }
+        
+        .Why .timeline-container .timeline .timeline-inverted .timeline-panel{
+            width: 42%
+        }
     }
-    100% {
-      z-index: 2;
-    }
+    @media (max-width: 575px){
+        
+       
+        .header .carousel .carousel-indicators{
+            top: 20px
+        }
+        .how .carousel-inner, .how .carousel-inner .carousel-item .slide-part{
+            height: 250px;
+        }
+        .Why .timeline-container .timeline:before, .Why .timeline-container .timeline li .timeline-badge{
+            left: 10%;
+        }
+        .Why .timeline-container .timeline li:not(.timeline-inverted){padding-right: 0}
+        .Why .timeline-container .timeline li .timeline-panel{
+            width: 80%;
+            
+            float: right;
+        }
+        .Why .timeline-container .timeline .timeline-inverted .timeline-panel{
+            width: 80%;
+        }
+        .Why .timeline-container .timeline li .timeline-panel:before{
+            border-left-width: 0;
+            border-right-width: 10px;
+            left: -10px;
+            right: auto;
+        }
+        .count .overlay .logo img {
+            width: 15%;
+            
+        }
+        .count .overlay .items div{
+            margin: 40px 0 
+        }
+        footer .content{
+            margin-left: 0 !important
+        }
     }
