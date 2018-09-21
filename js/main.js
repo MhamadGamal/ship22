@@ -9,7 +9,7 @@ $(document).ready(function(){
    }
    
    //Slider
-   $('.carousel').carousel({
+   $('#carouselExampleIndicators').carousel({
     interval: 4000
   })
   $('#carouselExample2Indicators').carousel({
