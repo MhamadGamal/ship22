@@ -227,9 +227,9 @@ a:hover {
       .header .carousel .carousel-inner .slider-caption {
         position: absolute;
         color: #fff;
-        width: 60%;
+        width: 45%;
         left: 97px;
-        margin-top: -40px;
+        margin-top: -80px;
         height: 100%; }
         .header .carousel .carousel-inner .slider-caption h3 {
           margin-bottom: 30px; }

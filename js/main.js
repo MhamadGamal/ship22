@@ -13,6 +13,13 @@ $(document).ready(function(){
     interval: 4000
   })
 
+  var active = $('.Price-Calc .item').closest('.Price-Calc').find('div.active');
+  //remove active box
+  $('.Price-Calc .item').hover(function(){
+      
+    active.removeClass('active'); 
+  });
+ 
    //services text
    var i = 1;
    var services = ['Parcels', 'Shop & Ship', 'Personal Shopper', 'Air Freight', 'Sea Freight']
