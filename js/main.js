@@ -18,6 +18,8 @@ $(document).ready(function(){
   $('.Price-Calc .item').hover(function(){
       
     active.removeClass('active'); 
+  }, function(){
+    active.addClass('active');
   });
  
    //services text
