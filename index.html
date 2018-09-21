@@ -243,22 +243,22 @@
             <!-- Boxes -->
             <div class="tabs text-center wow fadeInUp" data-wow-duration="1s">
                 <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
-                    <li class="nav-item">
+                    <li class="nav-item" data-target="#carouselExample2Indicators" data-slide-to="0">
                       <a class="nav-link " id="Shop-tab" data-toggle="tab" href="#Shop" role="tab" aria-controls="Shop" aria-selected="true">
                         <i class="fas fa-archive"></i><span>Shop & Ship</span>
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-target="#carouselExample2Indicators" data-slide-to="1">
                       <a class="nav-link active" id="air-tab" data-toggle="tab" href="#air" role="tab" aria-controls="air" aria-selected="false">
                           <i class="fas fa-plane"></i> <span>Air Freight</span>
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-target="#carouselExample2Indicators" data-slide-to="2">
                       <a class="nav-link" id="sea-tab" data-toggle="tab" href="#sea" role="tab" aria-controls="sea" aria-selected="false">
                           <i class="fas fa-ship"></i> <span>Sea Freight</span>
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-target="#carouselExample2Indicators" data-slide-to="3">
                       <a class="nav-link" id="Personal-tab" data-toggle="tab" href="#Personal" role="tab" aria-controls="Personal" aria-selected="false">
                           <i class="fas fa-shopping-bag"></i> <span>Personal Shopper</span>
                       </a>
@@ -275,15 +275,15 @@
             <!-- /Boxes -->
           </div>
           <!-- Slider -->
-          <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel2">
+          <div id="carouselExample2Indicators" class="carousel slide" data-interval="false" data-ride="carousel2">
               <ol class="carousel-indicators">
-                <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
+                <li data-target="#carouselExample2Indicators" data-slide-to="0" ></li>
+                <li data-target="#carouselExample2Indicators" data-slide-to="1" class="active"></li>
                 <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
                 <li data-target="#carouselExample2Indicators" data-slide-to="3"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item">
                   <div class="row">
                     <div class="col-3 slide-part part1-1">
                       <div class="slide-text">
@@ -311,7 +311,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item active">
                   <div class="row">
                     <div class="col-4 slide-part part2-1">
                       <div class="slide-text">

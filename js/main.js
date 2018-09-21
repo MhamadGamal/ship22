@@ -12,7 +12,9 @@ $(document).ready(function(){
    $('.carousel').carousel({
     interval: 4000
   })
-
+  $('#carouselExample2Indicators').carousel({
+    interval: false
+  })
   var active = $('.Price-Calc .item').closest('.Price-Calc').find('div.active');
   //remove active box
   $('.Price-Calc .item').hover(function(){
