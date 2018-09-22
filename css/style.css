@@ -976,6 +976,143 @@ footer .copy {
     background-color: #383538;
     padding: 70px;
     color: #eee; }
+    .login-section .login-form p {
+      color: #d4d4d4;
+      font-size: 13px; }
+      .login-section .login-form p a.sign-up {
+        color: #E3212B;
+        font-size: 12px; }
+    .login-section .login-form .remember {
+      font-size: 12px; }
+      .login-section .login-form .remember span {
+        color: #d4d4d4;
+        font-size: 12px; }
+    .login-section .login-form .forget a {
+      color: #d4d4d4;
+      font-size: 12px; }
+    .login-section .login-form .form-control {
+      background-color: #383538;
+      border-radius: 0;
+      font-size: 14px;
+      border: 1px solid #5a585a;
+      color: #d4d4d4; }
+    .login-section .login-form .control-label {
+      color: #999394; }
+    .login-section .login-form .btn-login {
+      background-color: #E3212B;
+      color: #fff;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .login-section .login-form .btn-login:hover {
+        background-color: #be1e26; }
+    .login-section .login-form .btn {
+      width: 270px;
+      font-size: 14px;
+      color: #fff;
+      text-align: left;
+      border-radius: 0 !important;
+      padding: 8px 25px;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .login-section .login-form .btn i {
+        margin-right: 50px; }
+    .login-section .login-form .face-btn {
+      background-color: #3B5998;
+      margin: 28px 50px  0 50px; }
+      .login-section .login-form .face-btn:hover {
+        background-color: #2b4b91;
+        color: #fff !important; }
+    .login-section .login-form .linked-btn {
+      background-color: #007BB6;
+      margin: 0 50px; }
+      .login-section .login-form .linked-btn:hover {
+        background-color: #115f83;
+        color: #fff !important; }
+    .login-section .login-form .plus-btn {
+      background-color: #DD4B39;
+      margin: 0 50px; }
+      .login-section .login-form .plus-btn:hover {
+        background-color: #c04130;
+        color: #fff !important; }
+
+/*==========================  SIGN_UP PAGE STYLE ===============================*/
+.sign-up-section {
+  background-image: url(../img/cover/sea.png);
+  background-size: cover; }
+  .sign-up-section .sign-up-form {
+    background-color: #383538;
+    padding: 70px;
+    color: #eee; }
+    .sign-up-section .sign-up-form p {
+      color: #d4d4d4;
+      font-size: 13px; }
+      .sign-up-section .sign-up-form p a.sign-up {
+        color: #E3212B;
+        font-size: 12px; }
+    .sign-up-section .sign-up-form .remember {
+      font-size: 12px; }
+      .sign-up-section .sign-up-form .remember span {
+        color: #d4d4d4;
+        font-size: 12px; }
+    .sign-up-section .sign-up-form .forget a {
+      color: #d4d4d4;
+      font-size: 12px; }
+    .sign-up-section .sign-up-form .form-control {
+      background-color: #383538;
+      border-radius: 0;
+      font-size: 14px;
+      border: 1px solid #5a585a;
+      color: #d4d4d4; }
+    .sign-up-section .sign-up-form .control-label {
+      color: #999394; }
+    .sign-up-section .sign-up-form .btn-login {
+      background-color: #E3212B;
+      color: #fff;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .sign-up-section .sign-up-form .btn-login:hover {
+        background-color: #be1e26; }
+    .sign-up-section .sign-up-form .btn {
+      width: 240px;
+      font-size: 14px;
+      color: #fff;
+      text-align: left;
+      border-radius: 0 !important;
+      padding: 8px 15px;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .sign-up-section .sign-up-form .btn i {
+        margin-right: 30px; }
+    .sign-up-section .sign-up-form .face-btn {
+      background-color: #3B5998;
+      margin: 28px 30px  0 30px; }
+      .sign-up-section .sign-up-form .face-btn:hover {
+        background-color: #2b4b91;
+        color: #fff !important; }
+    .sign-up-section .sign-up-form .linked-btn {
+      background-color: #007BB6;
+      margin: 0 30px; }
+      .sign-up-section .sign-up-form .linked-btn:hover {
+        background-color: #115f83;
+        color: #fff !important; }
+    .sign-up-section .sign-up-form .plus-btn {
+      background-color: #DD4B39;
+      margin: 0 30px; }
+      .sign-up-section .sign-up-form .plus-btn:hover {
+        background-color: #c04130;
+        color: #fff !important; }
 
 /*=============================== Responsive =============================*/
 @media (max-width: 1300px) {
@@ -1113,3 +1250,13 @@ footer .copy {
     margin: 40px 0; }
   footer .content {
     margin-left: 0 !important; } }
+
+@media (max-width: 550px) {
+  .header .carousel .carousel-inner .carousel-item .container .slider-caption {
+    margin: 10% 0 5% 0; }
+  .header .carousel .carousel-inner .carousel-item .container .slider-caption h3 {
+    font-size: 18px; }
+  .header .carousel .carousel-inner .carousel-item .container .slider-caption p {
+    font-size: 12px; }
+  .header .carousel .carousel-indicators {
+    top: 38%; } }

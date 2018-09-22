@@ -19,25 +19,38 @@ $(document).ready(function(){
   $('.Price-Calc .item').hover(function(){
       
     active.removeClass('active'); 
-  }, function(){
-    active.addClass('active');
   });
- 
+
+  //  ,function(){
+//     active.addClass('active');
+//   }
+
    //services text
    var i = 1;
    var services = ['Parcels', 'Shop & Ship', 'Personal Shopper', 'Air Freight', 'Sea Freight']
    var last = services.length-1;
    $('.booking .s-up').on('click', function(){
-    
+    $('#item'+(i-1)).removeClass('active');   
     $(this).siblings('h6').text(services[i]);
+    console.log(i);
+    active.removeClass('active');
+    $('#item'+i).addClass('active'); 
+    last = i;
     i++;
-    if(i == 4){
+    
+    if(i == 6){
+         
         i = 0;   
     }
+    
    }); 
    $('.booking .s-down').on('click', function(){
-    
+    $('#item'+(last+1)).removeClass('active');
     $(this).siblings('h6').text(services[last]);
+    console.log(last);
+    active.removeClass('active');
+    $('#item'+last).addClass('active');
+    i=last;
     last--; 
     if(last == -1){
         last = 4;
