@@ -3,11 +3,10 @@ $(document).ready(function(){
     var internal_height = $(window).innerHeight();
     var internal_width = $(window).innerWidth();
     //set header height
-   if(innerWidth > 1100){
+ if(internal_width>900){
     var internal_height = $(window).innerHeight();
-    $('.header-home, .header-about, header .carousel-inner').css('height', internal_height);
-   }
-   
+    $('.header-home, .header-about, header .carousel-inner,header .carousel-item,header .carousel-indicators').css('height', internal_height);
+}
    //Slider
    $('#carouselExampleIndicators').carousel({
     interval: 4000

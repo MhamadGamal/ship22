@@ -53,208 +53,159 @@ a:hover {
   color: #E3212B !important; }
 
 /*====================== Start Header Styles ===================================*/
-.header {
-  /*#Slider{
-        position: relative;
-        .Slider-indicators{
-            position: absolute;
-            right: 5%;
-            margin-top: 20%;
-            color: $main_text_light_color;
-            z-index: 6;
-            li{
-                a{
-                    display: inline-block;
-                    margin: 0;
-                    font-size: 35px;
-                    color: $main_text_light_color;
-                    &:hover{
-                        text-decoration: none;
-                        color: $main_text_light_color !important
-                    }
-                }
-            }
-        }
-        .slides {
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            li{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: 1;
-                .slider-caption{
-                    position: absolute;
-                    margin-top: 20%;
-                    left: 5%;
-                    width: 60%;
-                    color: $main_text_light_color
-                }
-                img {
-                    height: 100vmin;
-                    -o-object-fit: cover;
-                        object-fit: cover;
-                    -o-object-position: top;
-                        object-position: top;
-                }
-                &:target {
-                    z-index: 3;
-                    -webkit-animation: slide 3s 1;
-                    animation: slide 3s 1;
-                }
-                &:not(:target) {
-                    -webkit-animation: hidden 3s 1;
-                    animation: hidden 3s 1;
-                }
-
-            }
-
-        }
-    }*/ }
-  .header .navbar {
-    margin-bottom: -60px;
-    background-color: #383538;
-    z-index: 99;
-    padding: 0;
-    height: 60px; }
-    .header .navbar .logo {
-      width: 54px;
-      background-color: #fff;
-      padding: 7px; }
-      .header .navbar .logo img {
-        max-width: 100%; }
-    .header .navbar .navbar-collapse li {
-      margin: 0 10px;
-      padding: 10px 0;
+.header .navbar {
+  margin-bottom: -60px;
+  background-color: #383538;
+  z-index: 99;
+  padding: 0;
+  height: 60px; }
+  .header .navbar .logo {
+    width: 54px;
+    background-color: #fff;
+    padding: 7px; }
+    .header .navbar .logo img {
+      max-width: 100%; }
+  .header .navbar .navbar-collapse li {
+    margin: 0 10px;
+    padding: 10px 0;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
+    .header .navbar .navbar-collapse li a {
+      color: #eee;
+      font-size: 13px;
       -webkit-transition: all .4s ease-in-out;
       -moz-transition: all .4s ease-in-out;
       -ms-transition: all .4s ease-in-out;
       -o-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out; }
-      .header .navbar .navbar-collapse li a {
-        color: #eee;
+      .header .navbar .navbar-collapse li a i {
+        margin-right: 5px; }
+  .header .navbar .navbar-collapse .active,
+  .header .navbar .navbar-collapse li:hover {
+    border-bottom: 4px solid #E3212B; }
+    .header .navbar .navbar-collapse .active a,
+    .header .navbar .navbar-collapse li:hover a {
+      color: #E3212B; }
+  .header .navbar .login-box ul {
+    list-style: none;
+    margin: 0; }
+    .header .navbar .login-box ul li {
+      padding: 19px 8px;
+      margin: 0 5px;
+      color: #fff;
+      font-size: 13px; }
+    .header .navbar .login-box ul .login {
+      padding: 20px 15px;
+      background-color: #E3212B; }
+      .header .navbar .login-box ul .login a {
         font-size: 13px;
-        -webkit-transition: all .4s ease-in-out;
-        -moz-transition: all .4s ease-in-out;
-        -ms-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out; }
-        .header .navbar .navbar-collapse li a i {
-          margin-right: 5px; }
-    .header .navbar .navbar-collapse .active,
-    .header .navbar .navbar-collapse li:hover {
-      border-bottom: 4px solid #E3212B; }
-      .header .navbar .navbar-collapse .active a,
-      .header .navbar .navbar-collapse li:hover a {
-        color: #E3212B; }
-    .header .navbar .login-box ul {
-      list-style: none;
-      margin: 0; }
-      .header .navbar .login-box ul li {
-        padding: 19px 8px;
-        margin: 0 5px;
-        color: #fff;
-        font-size: 13px; }
-      .header .navbar .login-box ul .login {
-        padding: 20px 15px;
-        background-color: #E3212B; }
-        .header .navbar .login-box ul .login a {
-          font-size: 13px;
-          color: #eee; }
-          .header .navbar .login-box ul .login a:hover {
-            color: #383538 !important;
-            font-weight: bold; }
-      .header .navbar .login-box ul .lang img {
-        width: 12px;
-        margin-left: 3px;
-        margin-top: -2px; }
-    .header .navbar .navbar-toggler {
-      color: #E3212B;
-      padding: 0;
-      margin: 12px 15px 0 0;
-      font-size: 27px; }
-      .header .navbar .navbar-toggler:focus {
-        outline: none; }
-    .header .navbar .navbar-nav {
-      background-color: #383538; }
-  .header .carousel {
+        color: #eee; }
+        .header .navbar .login-box ul .login a:hover {
+          color: #383538 !important;
+          font-weight: bold; }
+    .header .navbar .login-box ul .lang img {
+      width: 12px;
+      margin-left: 3px;
+      margin-top: -2px; }
+  .header .navbar .navbar-toggler {
+    color: #E3212B;
+    padding: 0;
+    margin: 12px 15px 0 0;
+    font-size: 27px; }
+    .header .navbar .navbar-toggler:focus {
+      outline: none; }
+  .header .navbar .navbar-nav {
+    background-color: #383538; }
+
+.header .carousel {
+  height: 100%; }
+  .header .carousel .ind {
+    position: absolute;
+    left: 113px;
     height: 100%; }
-    .header .carousel .carousel-indicators {
-      position: absolute;
-      right: 97px;
-      bottom: auto;
-      left: auto;
-      z-index: 15;
-      flex-direction: column;
-      height: 100%;
+  .header .carousel .carousel-indicators {
+    top: 55%;
+    margin: 0;
+    height: 100%;
+    position: absolute;
+    right: 12px;
+    left: auto;
+    display: block; }
+    .header .carousel .carousel-indicators li {
+      width: 3px;
+      height: 40px;
       margin: 0;
-      top: 60px; }
-      .header .carousel .carousel-indicators li {
-        width: 3px;
-        height: 40px;
-        margin: 0;
-        position: relative;
+      position: relative;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .header .carousel .carousel-indicators li span {
+        position: absolute;
+        display: inline-block;
+        left: -40px;
+        top: 0;
+        color: rgba(255, 255, 255, 0.5);
+        text-indent: 0;
+        font-size: 20px;
         -webkit-transition: all .4s ease-in-out;
         -moz-transition: all .4s ease-in-out;
         -ms-transition: all .4s ease-in-out;
         -o-transition: all .4s ease-in-out;
         transition: all .4s ease-in-out; }
-        .header .carousel .carousel-indicators li span {
-          position: absolute;
-          display: inline-block;
-          left: -40px;
-          top: 0;
-          color: rgba(255, 255, 255, 0.5);
-          text-indent: 0;
-          font-size: 20px;
-          -webkit-transition: all .4s ease-in-out;
-          -moz-transition: all .4s ease-in-out;
-          -ms-transition: all .4s ease-in-out;
-          -o-transition: all .4s ease-in-out;
-          transition: all .4s ease-in-out; }
-      .header .carousel .carousel-indicators .active {
-        width: 5px;
-        right: 1px; }
-        .header .carousel .carousel-indicators .active span {
-          color: #fff !important;
-          background-color: transparent;
-          font-size: 30px;
-          left: -50px; }
-    .header .carousel .carousel-inner {
-      height: 100%;
-      position: relative; }
-      .header .carousel .carousel-inner .slider-caption {
-        position: absolute;
-        color: #fff;
-        width: 45%;
-        left: 97px;
-        margin-top: -10px;
-        height: 100%; }
-        .header .carousel .carousel-inner .slider-caption h3 {
-          margin-bottom: 30px; }
-      .header .carousel .carousel-inner img {
-        max-height: 100%; }
-      .header .carousel .carousel-inner .scrollable-icon {
-        position: absolute;
-        left: 45%;
-        width: 35px;
-        bottom: 15px;
-        cursor: pointer; }
-        .header .carousel .carousel-inner .scrollable-icon img {
-          width: 25px; }
-  .header .vertical .carousel-inner {
-    height: 100%; }
-  .header .carousel.vertical .carousel-item {
-    -webkit-transition: 0.6s ease-in-out top;
-    -moz-transition: 0.6s ease-in-out top;
-    -ms-transition: 0.6s ease-in-out top;
-    -o-transition: 0.6s ease-in-out top;
-    transition: 0.6s ease-in-out top; }
-  .header .carousel.vertical .active {
-    top: 0; }
-  .header .carousel.vertical .carousel-item {
-    left: 0; }
+    .header .carousel .carousel-indicators .active {
+      width: 5px;
+      right: 1px; }
+      .header .carousel .carousel-indicators .active span {
+        color: #fff !important;
+        background-color: transparent;
+        font-size: 30px;
+        left: -50px; }
+  .header .carousel .carousel-inner {
+    height: 100%;
+    position: relative; }
+    .header .carousel .carousel-inner .carousel-item {
+      background-size: cover;
+      height: 100%; }
+      .header .carousel .carousel-inner .carousel-item .container {
+        overflow: hidden; }
+        .header .carousel .carousel-inner .carousel-item .container .slider-caption {
+          float: left;
+          margin-top: 25%;
+          text-align: left;
+          color: #fff;
+          width: 47%;
+          padding: 0; }
+          .header .carousel .carousel-inner .carousel-item .container .slider-caption h3 {
+            margin-bottom: 30px; }
+    .header .carousel .carousel-inner .scrollable-icon {
+      position: absolute;
+      left: 45%;
+      width: 35px;
+      bottom: 15px;
+      cursor: pointer; }
+      .header .carousel .carousel-inner .scrollable-icon img {
+        width: 25px; }
+
+.header .vertical .carousel-inner {
+  height: 100%; }
+
+.header .carousel.vertical .carousel-item {
+  -webkit-transition: 0.6s ease-in-out top;
+  -moz-transition: 0.6s ease-in-out top;
+  -ms-transition: 0.6s ease-in-out top;
+  -o-transition: 0.6s ease-in-out top;
+  transition: 0.6s ease-in-out top; }
+
+.header .carousel.vertical .active {
+  top: 0; }
+
+.header .carousel.vertical .carousel-item {
+  left: 0; }
 
 /*====================== End Header Styles ===================================*/
 /*====================== Start Price Calculator Styles ===================================*/
@@ -1017,12 +968,55 @@ footer .copy {
 *******************************************************************************
 *****************************************************************************
 ***************************************************/
+/*==========================  LOGIN PAGE STYLE ===============================*/
+.login-section {
+  background-image: url(../img/cover/sea.png);
+  background-size: cover; }
+  .login-section .login-form {
+    background-color: #383538;
+    padding: 70px;
+    color: #eee; }
+
 /*=============================== Responsive =============================*/
 @media (max-width: 1300px) {
-  .header .carousel .carousel-inner .slider-caption {
-    top: 10%; } }
+  .header .carousel .ind {
+    left: 83px; } }
+
+@media (max-width: 1200px) {
+  .header .carousel .ind {
+    left: 75px; }
+  .header .carousel .carousel-indicators {
+    top: 45%; } }
+
+@media (max-width: 1100px) {
+  .header .carousel .ind {
+    left: 70px; } }
+
+@media (max-width: 1080px) {
+  .header .carousel .ind {
+    left: 56px; } }
+
+@media (max-width: 1070px) {
+  .header .carousel .ind {
+    left: 40px; }
+  .contact .contact-footer p, .contact .contact-holder, .contact .contact-holder input, .contact .contact-holder textarea {
+    font-size: 12px; } }
+
+@media (max-width: 1040px) {
+  .header .carousel .ind {
+    left: 35px; } }
+
+@media (max-width: 1020px) {
+  .header .carousel .ind {
+    left: 25px; } }
+
+@media (max-width: 1000px) {
+  .header .carousel .ind {
+    left: 20px; } }
 
 @media (max-width: 992px) {
+  .header .carousel .ind {
+    left: 38px; }
   .header .navbar .navbar-collapse li a {
     text-align: center; }
   .header-contact {
@@ -1037,10 +1031,6 @@ footer .copy {
     padding: 5px 10px; }
   .container {
     max-width: 885px; }
-  .header .carousel .carousel-inner .slider-caption {
-    top: 22%; }
-  .header .carousel .carousel-indicators {
-    top: -10px; }
   .Price-Calc .booking .Parcels {
     width: 75px;
     height: 139px; }
@@ -1053,6 +1043,28 @@ footer .copy {
   .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
     width: 44%; } }
 
+@media (max-width: 960px) {
+  .header .carousel .ind {
+    left: 30px; } }
+
+@media (max-width: 945px) {
+  .header .carousel .ind {
+    left: 22px; } }
+
+@media (max-width: 925px) {
+  .header .carousel .ind {
+    left: 15px; } }
+
+@media (max-width: 915px) {
+  .header .carousel .ind {
+    left: 10px; } }
+
+@media (max-width: 905px) {
+  .header .carousel .ind {
+    left: 5px; }
+  .header .carousel .carousel-inner .carousel-item .container .slider-caption {
+    margin: 20% 0; } }
+
 @media (max-width: 800px) {
   .header .container {
     width: 100% !important;
@@ -1062,35 +1074,23 @@ footer .copy {
   .header .carousel {
     margin-top: 60px !important; }
   .header .carousel .carousel-inner .slider-caption {
-    top: 11% !important;
-    left: 30px !important;
     width: 70% !important; }
   .how .carousel-inner .carousel-item .part3-2 .slide-text, .how .carousel-inner .carousel-item .part2-2 .slide-text, .how .carousel-inner .carousel-item .part4-2 .slide-text {
     margin-top: 120%; } }
 
 @media (max-width: 700px) {
-  .header .carousel .carousel-inner .slider-caption {
-    width: 70%;
-    left: 30px; }
-  .header .carousel .carousel-indicators {
-    top: 20px;
-    right: 45px; }
   .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
     width: 42%; }
   .how .carousel-inner, .how .carousel-inner .carousel-item .slide-part {
     height: 350px; } }
 
 @media (max-width: 630px) {
-  .header .carousel .carousel-inner .slider-caption {
-    display: none !important; }
-  .header .carousel .carousel-indicators {
-    top: 40px; }
+  .header .carousel .carousel-inner .carousel-item .container .slider-caption {
+    margin: 15% 0 5% 0; }
   .Why .timeline-container .timeline .timeline-inverted .timeline-panel {
     width: 42%; } }
 
 @media (max-width: 575px) {
-  .header .carousel .carousel-indicators {
-    top: 20px; }
   .how .carousel-inner, .how .carousel-inner .carousel-item .slide-part {
     height: 250px; }
   .Why .timeline-container .timeline:before, .Why .timeline-container .timeline li .timeline-badge {
