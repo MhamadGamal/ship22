@@ -20,6 +20,9 @@ p, a, li {
 h1, h2, h3, h4, h5, h6 {
   font-family: main_Th_font; }
 
+.border-right-none {
+  border-right: none !important; }
+
 section {
   padding: 50px 0; }
 
@@ -984,20 +987,65 @@ footer .copy {
         font-size: 12px; }
     .login-section .login-form .remember {
       font-size: 12px; }
-      .login-section .login-form .remember span {
+      .login-section .login-form .remember input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer; }
+      .login-section .login-form .remember label {
         color: #d4d4d4;
-        font-size: 12px; }
+        font-size: 10px;
+        position: relative;
+        cursor: pointer; }
+        .login-section .login-form .remember label::before {
+          content: '';
+          -webkit-appearance: none;
+          background-color: transparent;
+          border: 1px solid #E3212B;
+          padding: 6px;
+          display: inline-block;
+          position: relative;
+          vertical-align: top;
+          cursor: pointer;
+          margin-right: 5px; }
+      .login-section .login-form .remember input:checked + label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        width: 5px;
+        height: 9px;
+        border: solid #E3212B;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg); }
     .login-section .login-form .forget a {
       color: #d4d4d4;
-      font-size: 12px; }
+      font-size: 10px; }
     .login-section .login-form .form-control {
       background-color: #383538;
       border-radius: 0;
       font-size: 14px;
       border: 1px solid #5a585a;
-      color: #d4d4d4; }
+      color: #d4d4d4;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .login-section .login-form .form-control:focus {
+        box-shadow: none !important;
+        background-color: #3c3a3c; }
     .login-section .login-form .control-label {
-      color: #999394; }
+      color: #d4d4d4; }
+    .login-section .login-form .input-group-text {
+      background-color: #383538 !important;
+      border: 1px solid #5a585a;
+      border-left: none;
+      cursor: pointer;
+      color: #eee; }
     .login-section .login-form .btn-login {
       background-color: #E3212B;
       color: #fff;
@@ -1008,7 +1056,9 @@ footer .copy {
       transition: all .4s ease-in-out; }
       .login-section .login-form .btn-login:hover {
         background-color: #be1e26; }
-    .login-section .login-form .btn {
+    .login-section .login-form .face-btn {
+      background-color: #3B5998;
+      margin: 28px 50px  0 50px;
       width: 270px;
       font-size: 14px;
       color: #fff;
@@ -1020,23 +1070,46 @@ footer .copy {
       -ms-transition: all .4s ease-in-out;
       -o-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out; }
-      .login-section .login-form .btn i {
+      .login-section .login-form .face-btn i {
         margin-right: 50px; }
-    .login-section .login-form .face-btn {
-      background-color: #3B5998;
-      margin: 28px 50px  0 50px; }
       .login-section .login-form .face-btn:hover {
         background-color: #2b4b91;
         color: #fff !important; }
     .login-section .login-form .linked-btn {
       background-color: #007BB6;
-      margin: 0 50px; }
+      margin: 0 50px;
+      width: 270px;
+      font-size: 14px;
+      color: #fff;
+      text-align: left;
+      border-radius: 0 !important;
+      padding: 8px 25px;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .login-section .login-form .linked-btn i {
+        margin-right: 50px; }
       .login-section .login-form .linked-btn:hover {
         background-color: #115f83;
         color: #fff !important; }
     .login-section .login-form .plus-btn {
       background-color: #DD4B39;
-      margin: 0 50px; }
+      margin: 0 50px;
+      width: 270px;
+      font-size: 14px;
+      color: #fff;
+      text-align: left;
+      border-radius: 0 !important;
+      padding: 8px 25px;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .login-section .login-form .plus-btn i {
+        margin-right: 50px; }
       .login-section .login-form .plus-btn:hover {
         background-color: #c04130;
         color: #fff !important; }
@@ -1057,9 +1130,41 @@ footer .copy {
         font-size: 12px; }
     .sign-up-section .sign-up-form .remember {
       font-size: 12px; }
-      .sign-up-section .sign-up-form .remember span {
+      .sign-up-section .sign-up-form .remember input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer; }
+      .sign-up-section .sign-up-form .remember label {
         color: #d4d4d4;
-        font-size: 12px; }
+        font-size: 12px;
+        position: relative;
+        cursor: pointer; }
+        .sign-up-section .sign-up-form .remember label::before {
+          content: '';
+          -webkit-appearance: none;
+          background-color: transparent;
+          border: 2px solid #0079bf;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          padding: 10px;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 5px; }
+      .sign-up-section .sign-up-form .remember input:checked + label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 9px;
+        width: 6px;
+        height: 14px;
+        border: solid #0079bf;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg); }
     .sign-up-section .sign-up-form .forget a {
       color: #d4d4d4;
       font-size: 12px; }
@@ -1070,7 +1175,7 @@ footer .copy {
       border: 1px solid #5a585a;
       color: #d4d4d4; }
     .sign-up-section .sign-up-form .control-label {
-      color: #999394; }
+      color: #d4d4d4; }
     .sign-up-section .sign-up-form .btn-login {
       background-color: #E3212B;
       color: #fff;
@@ -1081,7 +1186,9 @@ footer .copy {
       transition: all .4s ease-in-out; }
       .sign-up-section .sign-up-form .btn-login:hover {
         background-color: #be1e26; }
-    .sign-up-section .sign-up-form .btn {
+    .sign-up-section .sign-up-form .face-btn {
+      background-color: #3B5998;
+      margin: 28px 30px  0 30px;
       width: 240px;
       font-size: 14px;
       color: #fff;
@@ -1093,23 +1200,46 @@ footer .copy {
       -ms-transition: all .4s ease-in-out;
       -o-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out; }
-      .sign-up-section .sign-up-form .btn i {
+      .sign-up-section .sign-up-form .face-btn i {
         margin-right: 30px; }
-    .sign-up-section .sign-up-form .face-btn {
-      background-color: #3B5998;
-      margin: 28px 30px  0 30px; }
       .sign-up-section .sign-up-form .face-btn:hover {
         background-color: #2b4b91;
         color: #fff !important; }
     .sign-up-section .sign-up-form .linked-btn {
       background-color: #007BB6;
-      margin: 0 30px; }
+      margin: 0 30px;
+      width: 240px;
+      font-size: 14px;
+      color: #fff;
+      text-align: left;
+      border-radius: 0 !important;
+      padding: 8px 15px;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .sign-up-section .sign-up-form .linked-btn i {
+        margin-right: 30px; }
       .sign-up-section .sign-up-form .linked-btn:hover {
         background-color: #115f83;
         color: #fff !important; }
     .sign-up-section .sign-up-form .plus-btn {
       background-color: #DD4B39;
-      margin: 0 30px; }
+      margin: 0 30px;
+      width: 240px;
+      font-size: 14px;
+      color: #fff;
+      text-align: left;
+      border-radius: 0 !important;
+      padding: 8px 15px;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+      .sign-up-section .sign-up-form .plus-btn i {
+        margin-right: 30px; }
       .sign-up-section .sign-up-form .plus-btn:hover {
         background-color: #c04130;
         color: #fff !important; }

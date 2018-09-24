@@ -88,5 +88,17 @@ $(document).ready(function(){
     $("body").niceScroll({
         cursorcolor:"#E3212B"
         });  
+    
+    // show pass
+    $('#showPass').on('click', function(){
+        var inputp = $(this).parents('.input-group').find('input[type=password]');
+        var inputt = $(this).parents('.input-group').find('input[type=text]');
         
+        $(this).toggleClass('show');
+        if($(this).hasClass('show')){
+            inputp.attr('type', 'text')
+        }else{
+            inputt.attr('type', 'password')
+        }
+    });    
 });
